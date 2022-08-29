@@ -7,7 +7,7 @@ import produce from "immer";
 const Page = () => {
   const [pageData, setPageData] = useState<(number | null)[][]>([[null]]);
   useEffect(() => {
-    const output = generateEmptyMatrix(500);
+    const output = generateEmptyMatrix(50);
     setPageData(output);
   }, []);
 
